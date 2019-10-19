@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme"/>
+
+    <style name="ProductsListActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BrandTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="PriceLabel">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ProductTitle">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/errorStateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+            android:id="@+id/verticalGuidelineLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/sixteenDp"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/verticalGuidelineRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/sixteenDp"/>
+
+    <ImageView
+            android:id="@+id/imageViewErrorIcon"
+            android:layout_width="@dimen/sixtyFourDp"
+            android:layout_height="@dimen/sixtyFourDp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@id/textViewErrorMessage"
+            app:layout_constraintLeft_toRightOf="@id/verticalGuidelineLeft"
+            app:layout_constraintRight_toLeftOf="@id/verticalGuidelineRight"
+            android:tint="@color/colorAccent"
+            tools:src="@drawable/ic_empty"/>
+
+    <TextView
+            android:id="@+id/textViewErrorMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Error Message"
+            android:layout_marginTop="@dimen/sixteenDp"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/buttonRetry"
+            app:layout_constraintLeft_toRightOf="@id/verticalGuidelineLeft"
+            app:layout_constraintRight_toLeftOf="@id/verticalGuidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/imageViewErrorIcon"/>
+
+    <Button
+            android:id="@+id/buttonRetry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/retry"
+            android:layout_marginTop="@dimen/sixteenDp"
+            app:layout_constraintTop_toBottomOf="@id/textViewErrorMessage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/verticalGuidelineLeft"
+            app:layout_constraintRight_toLeftOf="@id/verticalGuidelineRight"/>
+
+</android.support.constraint.ConstraintLayout>

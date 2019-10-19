@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sixteenDp">16dp</dimen>
+    <dimen name="twentyFourDp">24dp</dimen>
+    <dimen name="eightDp">8dp</dimen>
+    <dimen name="fourDp">4dp</dimen>
+    <dimen name="sixtyFourDp">64dp</dimen>
+    <integer name="product_list_columns_amount">1</integer>
+</resources>

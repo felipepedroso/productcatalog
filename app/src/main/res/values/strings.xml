@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProductCatalog</string>
+    <string name="retry">Retry</string>
+    <string name="product_image_shared_element_name">productImage</string>
+    <string name="product_details_default_title">Product Details</string>
+    <string name="catalog_title">Products Catalog</string>
+    <string name="generic_error_message">Unfortunately we couldn\'t retrieve your products list. Please try again
+        later.
+    </string>
+    <string name="network_error_message">It seems that you are facing a connection error. Please try again later.
+    </string>
+    <string name="database_error_message">We had a problem storing the products locally. Please try to update your app
+        before loading them again.
+    </string>
+    <string name="empty_state_message">Uh oh! It seems that we don\'t have any products to show. Please try again later
+        or contact our support.
+    </string>
+</resources>
